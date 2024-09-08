@@ -1,0 +1,78 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+@font-face {
+    font-family: 'pricedown';
+    src: url('fonts/pricedown\ bl.otf');
+}
+
+@font-face {
+    font-family: 'futura-lt-bold';
+    src: url('fonts/FuturaLT-Bold.ttf');
+}
+
+@font-face {
+    font-family: 'bank-gothic';
+    src: url('fonts/bank\ gothic\ medium\ bt.ttf');
+}
+
+body{
+    background:url('images/bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.container{
+    max-width: 100%;
+    margin: 0 auto;
+    height: 100vh;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+    text-align: center;
+}
+
+h1{
+    font-family: 'pricedown';
+    font-size: 3.2em;
+    color: goldenrod;
+    
+}
+
+p{
+    font-family: 'futura-lt-bold';
+    font-size: 20px;
+    color: rgb(44, 44, 44);
+    
+}
+
+span{
+    color:rgb(0, 202, 0);
+}
+
+button{
+    font-family: 'bank-gothic';
+    width: 180px;
+    font-size: 30px;
+    padding: 10px 0;
+    background-color: rgb(44, 44, 44);
+    border: none;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
+
+a{
+    color: white;
+    text-decoration: none;
+    letter-spacing: 2px;
+}
+
+a:hover{
+    color: rgb(0, 202, 0);
+}

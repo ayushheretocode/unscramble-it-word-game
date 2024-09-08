@@ -1,0 +1,135 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'pricedown';
+    src: url('fonts/pricedown\ bl.otf');
+}
+
+@font-face {
+    font-family: 'futura-lt-bold';
+    src: url('fonts/FuturaLT-Bold.ttf');
+}
+
+@font-face {
+    font-family: 'bank-gothic';
+    src: url('fonts/bank\ gothic\ medium\ bt.ttf');
+}
+
+body{
+    background:url('images/bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: 'futura-lt-bold';
+}
+
+
+
+.container{
+    width: 480px;
+    max-width: 100%;
+    margin: 0 auto;
+    height: 100vh;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 5em;
+}
+
+.score-timer-div{
+    font-size: 26px;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+#score{
+    color: green;
+    -webkit-text-stroke: 2px rgb(50, 50, 50);
+}
+
+#time{
+    color: white;
+    -webkit-text-stroke: 2px rgb(50, 50, 50);
+}
+
+#word{
+    color:rgb(44, 44, 44);
+    font-size: 50px;
+}
+
+p{
+    color:rgb(44, 44, 44);
+    font-size: 18px;
+    margin-bottom: 1em;
+    font-style: italic;
+}
+
+.game-section{
+    width: 100%;
+}
+
+#user-input{
+    width: 100%;
+    font-size: 20px;
+    padding: 12px;
+    border: 2px solid black;
+    margin-bottom: 2em;
+    text-transform: uppercase;
+}
+
+#submit-btn{
+    width: 50%;
+    font-family: 'bank-gothic';
+    color: white;
+    font-size: 26px;
+    letter-spacing: 2px;
+    padding: 10px 0;
+    background-color: rgb(44, 44, 44);
+    border: none;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
+
+#submit-btn:hover{
+    color:green;
+    cursor: pointer;
+}
+
+@keyframes scaleUpFromCenter {
+    0% {
+        transform: translate(-50%, -50%) scale(0); /* Start small from the center */
+    }
+    100% {
+        transform: translate(-50%, -50%) scale(1); /* End at full size and stay centered */
+    }
+}
+
+.wasted{
+    font-family: 'pricedown';
+    font-size: 5em;
+    color:rgb(187, 0, 0);
+    -webkit-text-stroke: px rgb(50, 50, 50);
+    position: absolute; /* Absolutely positioned for smooth scaling */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0); /* Start small */
+    animation: scaleUpFromCenter 3s ease-out forwards; /* Animation */
+}
+
+
+.mission{
+    color:goldenrod;
+    font-family: 'pricedown';
+    font-size: 52px;
+}
+.respect{
+    color: rgb(44, 44, 44);
+
+}
