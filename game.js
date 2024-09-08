@@ -79,7 +79,8 @@ function check()
         score+=100
         console.log('score increase')
         scoreEl.innerText=`$${score}`
-        cashSound.play()
+        if(counter<9)
+            cashSound.play()
         userInputEl.value=""
         counter++
         wordEl.innerText=gameWords[counter]
